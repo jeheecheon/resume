@@ -11,7 +11,7 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
     return (
-        <div className="font-['Pretendard'] text-color bg-color min-h-full 
+        <div className="font-['Pretendard'] text-inverse-1 bg-color min-h-full 
         transition-colors duration-300">
             <GradientBar />
 
