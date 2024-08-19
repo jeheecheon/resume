@@ -13,6 +13,7 @@ export const useThemeStore = create<ThemeState>((set) => ({
 
     setDarkMode: (mode) => {
         localStorage.setItem('theme', mode ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', mode);
         set(() => ({ isDarkMode: mode }));
     },
 }));

@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html,
+    body,
+    #root {
+        @apply bg-color;
+        height: 100%;
+    }
+
+    :root {
+        --bg-color: #ffffff;
+    }
+
+    .dark {
+        --bg-color: #101010;
+    }
+}
+
+@layer utilities {
+    .bg-color {
+        background-color: var(--bg-color);
+    }
+}
