@@ -6,21 +6,31 @@
     html,
     body,
     #root {
-        @apply bg-color;
         height: 100%;
     }
 
     :root {
         --bg-color: #ffffff;
+        --text-color: #222222;
+        --theme-text-color: #3a7bd5;
     }
 
     .dark {
         --bg-color: #060606;
+        --text-color: #f5f6f7;
     }
 }
 
 @layer utilities {
     .bg-color {
         background-color: var(--bg-color);
+    }
+
+    .text-color {
+        color: var(--text-color);
+    }
+
+    .theme-text-color {
+        color: var(--theme-text-color);
     }
 }
