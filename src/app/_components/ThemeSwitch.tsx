@@ -18,7 +18,10 @@ function ThemeSwitch({ className }: ThemeSwitchProps) {
     }
 
     return (
-        <button className={`ml-auto ${className}`} onClick={handleClick}>
+        <button
+            className={`ml-auto p-2 rounded-lg bg-gray-900 ${className}`}
+            onClick={handleClick}
+        >
             {modeDisplay}
         </button>
     );
