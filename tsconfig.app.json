@@ -25,6 +25,6 @@
             "@/*": ["./src/app/*"]
         }
     },
-    "include": ["src"],
+    "include": ["src", "public/theme.ts"],
     "exclude": ["node_modules", "dist"]
 }
