@@ -255,7 +255,7 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Description</h4>
                     <p className="leading-[1.6rem]">
-                        개인 DB를 가지고 있는 기술 블로그입니다.
+                        개인 DB를 활용하는 기술 블로그입니다.
                     </p>
                 </div>
 
