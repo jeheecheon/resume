@@ -1,4 +1,5 @@
-import { create } from 'zustand';
+import { create  } from 'zustand';
+import { isDarkMode, adjustThemeColor } from '@/_utils/theme';
 
 interface ThemeState {
     isDarkMode: boolean;
@@ -6,14 +7,10 @@ interface ThemeState {
 }
 
 export const useThemeStore = create<ThemeState>((set) => ({
-    isDarkMode:
-        localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-            window.matchMedia('(prefers-color-scheme: dark)').matches),
+    isDarkMode: isDarkMode,
 
     setDarkMode: (mode) => {
-        localStorage.setItem('theme', mode ? 'dark' : 'light');
-        document.documentElement.classList.toggle('dark', mode);
+        adjustThemeColor(mode);
         set(() => ({ isDarkMode: mode }));
     },
 }));
