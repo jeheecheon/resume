@@ -6,7 +6,8 @@ interface TagProps {
 
 function Tag({ children }: TagProps) {
     return (
-        <span className="bg-[#f6f2ef] dark:bg-[#202020] px-3 py-1 rounded-md text-sm font-semibold">
+        <span className="bg-[#f6f2ef] dark:bg-[#202020] px-3 py-1 rounded-md
+        text-[0.8rem] sm:text-sm font-semibold">
             {children}
         </span>
     );

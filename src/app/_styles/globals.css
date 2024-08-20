@@ -43,14 +43,14 @@
     }
 
     h3 {
-        @apply text-xl;
+        @apply text-[1.5rem];
         @apply sm:text-[1.8rem];
         @apply font-semibold;
     }
 
     h4 {
-        @apply text-lg;
-        @apply sm:text-xl;
+        @apply text-[1.4rem];
+        @apply sm:text-[1.7rem];
         @apply font-semibold;
     }
 

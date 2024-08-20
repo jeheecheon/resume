@@ -42,26 +42,34 @@ Page.Contact = function Contact() {
             <h2>Contact</h2>
 
             <div className="flex flex-col sm:flex-row gap-x-4 items-center">
-                <div className="w-full aspect-square max-w-[14rem] bg-gray-200 rounded-full sm:rounded-3xl" />
+                {/* <div className="w-full aspect-square max-w-[14rem] bg-gray-200 rounded-full sm:rounded-3xl" /> */}
 
-                <div className="w-full h-[10rem] sm:w-fit sm:h-[13rem] px-3 sm:px-0 flex flex-col justify-around">
+                <div className="w-full sm:w-fit px-3 sm:px-0 flex flex-col gap-y-3 justify-around">
                     <div className="space-y-1">
                         <h3>Reach me</h3>
 
-                        <div className="text-sm text-nowrap">
+                        <div className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Phone. '}
                             </p>
-                            <a title="Phone Number" href="tel:010-9666-8460">
+                            <a
+                                title="Phone Number"
+                                href="tel:010-9666-8460"
+                                className="text-sm"
+                            >
                                 010-9666-8460
                             </a>
                         </div>
 
-                        <div className="text-sm text-nowrap">
+                        <div className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Email. '}
                             </p>
-                            <a title="Email" href="mailto:jeheecheon@gmail.com">
+                            <a
+                                title="Email"
+                                href="mailto:jeheecheon@gmail.com"
+                                className="text-sm"
+                            >
                                 jeheecheon@gmail.com
                             </a>
                         </div>
@@ -70,22 +78,31 @@ Page.Contact = function Contact() {
                     <div className="space-y-1">
                         <h3>Channel</h3>
 
-                        <div className="text-sm text-nowrap">
+                        <div className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Blog. '}
                             </p>
-                            <a title="Blog" href="https://blog.jeheecheon.com">
+                            <a
+                                title="Blog"
+                                href="https://blog.jeheecheon.com"
+                                className="text-sm"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 https://blog.jeheecheon.com
                             </a>
                         </div>
 
-                        <div className="text-sm text-nowrap">
+                        <div className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Github. '}
                             </p>
                             <a
                                 title="Github"
                                 href="https://github.com/jeheecheon"
+                                className="text-sm"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 https://github.com/jeheecheon
                             </a>
@@ -107,7 +124,7 @@ Page.Projects = function Projects() {
                     명지대학교 캡스톤디자인 경진 대회
                     <span className="text-theme-1">{` (동상)`}</span>
                 </h3>
-                <p className="mt-1 text-xs sm:text-sm">
+                <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 03. ~ 2024. 05.{'\n'}
                     팀장 | 총 4명
                 </p>
@@ -115,7 +132,7 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Description</h4>
 
-                    <p className="text-base">
+                    <p className="text-base leading-[1.6rem]">
                         먹짐마 (웹앱).{'\n'}
                         헬스장을 의미하는 단어 Gym과 많이 먹는 것을 자제하라는
                         의미가 포함된 프로젝트명입니다. 사용자의 식단 관리 및
@@ -175,12 +192,12 @@ Page.Projects = function Projects() {
 
                 <div>
                     <h4 className="mt-5 text-theme-1">Project Review</h4>
-                    <p>
+                    <p className="leading-[1.6rem]">
                         프로젝트 특성에 맞춰 모바일 친화적인 UI/UX를 디자인
                         했습니다. Figma와 같은 디자인 툴을 다뤄본 적이 없기에
-                        간단히 스케치를 곧바로 코드로 옮기는 방법을 택했는데
-                        세심한 디테일에 신경쓰다보니 기존 디자인을 수정하는 일이
-                        잦아 많은 시간이 할애됐습니다.{'\n'}
+                        스케치를 곧바로 코드로 옮기는 방법을 택했는데 세심한
+                        디테일에 신경쓰다보니 기존 디자인을 수정하는 일이 잦아
+                        많은 시간이 할애됐습니다.{'\n'}
                         비동기 AI Call이 필요한 경우 유저에게 실시간 로딩 상태를
                         표시하여 반응성 높은 UX를 제공했습니다. Client-Side 에서
                         비동기 로직을 다룰 때는 외부 상태관리 라이브러리 도움
@@ -234,14 +251,14 @@ Page.Projects = function Projects() {
 
             <div className="mt-[4rem]">
                 <h3>개인 블로그 개발</h3>
-                <p className="mt-1 text-xs sm:text-sm">
+                <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 01. ~ 2024. 02.{'\n'}
                     개인 프로젝트 (유지보수 중)
                 </p>
 
                 <div>
                     <h4 className="mt-5 text-theme-1">Description</h4>
-                    <p>
+                    <p className="leading-[1.6rem]">
                         개인 DB 서버를 활용하고 있습니다. Oatuh 로그인을
                         지원하며 동적으로 글, 댓글 등을 저장하거나 불러옵니다.
                     </p>
@@ -285,7 +302,7 @@ Page.Projects = function Projects() {
 
                 <div>
                     <h4 className="mt-5 text-theme-1">Project Review</h4>
-                    <p>
+                    <p className="leading-[1.6rem]">
                         다소 느린 배포 서버가 사용자 경험에 미치는 영향을
                         최소화하기 위해 스켈레톤 UI 컴포넌트를 만들었습니다.
                         비동기 상태관리는 react-query를 사용하여 간단하게
@@ -342,22 +359,31 @@ Page.Projects = function Projects() {
 
             <div className="mt-[4rem]">
                 <h3>AO 스터디 공식 웹사이트</h3>
-                <p className="mt-1 text-xs sm:text-sm">
+                <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 01. ~ 2024. 02.{'\n'}
-                    Team 1 멘토 | 총 12명
+                    Team 2 멘토 | 총 12명
                 </p>
+
+                <div>
+                    <h4 className="mt-5 text-theme-1">Description</h4>
+                    <p className="leading-[1.6rem]">
+                        명지대 AO 스터디의 공식 웹사이트입니다. 스터디 홍보
+                        목적으로 제작되었으며, 신입 스터디원을 모집받기 위해
+                        지원서 제출을 받을 수 있습니다.
+                    </p>
+                </div>
 
                 <div>
                     <h4 className="mt-5 text-theme-1">What I did</h4>
                     <ul>
                         <li>
                             <p>
-                                Team 1의 멘토(팀장)으로 참여하여 프론트팀과
+                                Team 2의 멘토(팀장)으로 참여하여 프론트팀과
                                 백엔드팀의 질문 답변 및 코드 리뷰
                             </p>
                         </li>
                         <li>
-                            <p>Team 1의 git 컨벤션 구성</p>
+                            <p>Team 2의 git 컨벤션 구성</p>
                         </li>
                         <li>
                             <p>
@@ -379,7 +405,7 @@ Page.Projects = function Projects() {
 
                 <div>
                     <h4 className="mt-5 text-theme-1">Project Review</h4>
-                    <p>
+                    <p className="leading-[1.6rem]">
                         프론트와 백엔드의 코드베이스 통합 작업을 주도했습니다.
                         특히 Svelte로 작성된 코드베이스를 React로 변환하며,
                         프론트엔드 팀의 개발을 가이드하고 코드 리뷰를
@@ -430,11 +456,13 @@ Page.Projects = function Projects() {
 
             <div className="mt-[4rem]">
                 <h3>Etc</h3>
-                <p className='mt-1'>
+                <p className="mt-1">
                     이외 진행했던 프로젝트들은 아래 링크에서 확인할 수 있습니다.
                 </p>
                 <p className="text-xs sm:text-sm">
-                    <span className='font-medium text-theme-1'>Projects Cagetory. </span>
+                    <span className="font-medium text-theme-1">
+                        Projects Cagetory.{' '}
+                    </span>
                     <a
                         title="Projects 카테고리"
                         href="https://blog.jeheecheon.com/categories/Projects"
