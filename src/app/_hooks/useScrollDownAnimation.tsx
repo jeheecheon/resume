@@ -23,6 +23,8 @@ function useScrollDownAnimation(ref: React.RefObject<HTMLElement>) {
                     tag.classList.add('translate-y-10');
                     tag.classList.add('duration-[600ms]');
                     tag.classList.add('transition-all');
+                    tag.classList.add('ease-in-out');
+
                 }
             });
     }, [ref]);
