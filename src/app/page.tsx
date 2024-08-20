@@ -1,34 +1,13 @@
 import Tag from '@/_components/Tag';
-import { useEffect } from 'react';
+import { useRef } from 'react';
+import useScrollDownAnimation from './_hooks/useScrollDownAnimation';
 
 function Page() {
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove('opacity-0');
-                    entry.target.classList.remove('-translate-y-10');
-                    entry.target.classList.add('translate-y-0');
-                }
-            });
-        });
-
-        const resume = document.getElementById('resume');
-        resume
-            ?.querySelectorAll('h1, h2, h3, h4, h5, h6, p, ul, li, div')
-            .forEach((tag) => {
-                if (!tag.classList.contains('fixed')) {
-                    observer.observe(tag);
-                    tag.classList.add('opacity-0');
-                    tag.classList.add('-translate-y-10');
-                    tag.classList.add('duration-1000');
-                    tag.classList.add('transition-all');
-                }
-            });
-    }, []);
+    const ref = useRef<HTMLDivElement>(null);
+    useScrollDownAnimation(ref);
 
     return (
-        <div id="resume" className="whitespace-pre-line py-10">
+        <div ref={ref} className="whitespace-pre-line py-10">
             <Page.Greeting />
             <Page.Introduction />
             <Page.Contact />
