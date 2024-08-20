@@ -157,7 +157,7 @@ Page.Projects = function Projects() {
                             </p>
                         </li>
                         <li>
-                            <p>타미어와 함께 운동플랜 진행</p>
+                            <p>타이머와 함께 운동플랜 진행</p>
                         </li>
                         <li>
                             <p>
