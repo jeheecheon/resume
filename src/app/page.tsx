@@ -198,7 +198,7 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Project Review</h4>
                     <p className="leading-[1.6rem]">
-                        비동기 AI Call을 호출할 때 유저에게 실시간 로딩 상태를
+                        비동기 AI Call을 호출할 때 실시간 로딩 상태를
                         표시하여 반응성 높은 UX를 제공했습니다. Client-Side 에서
                         비동기 로직을 다룰 때 외부 상태관리 라이브러리 도움 없이
                         React의 Suspense API를 활용하여 직접 처리해보기도

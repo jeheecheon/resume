@@ -15,8 +15,8 @@
         @apply bg-[var(--bg-color)];
 
         --bg-color: #ffffff;
-        --inverse-color-1: #222222;
-        --inverse-color-2: #333333;
+        --inverse-color-1: #424242;
+        --inverse-color-2: #525252;
         --inverse-color-3: #807b7b;
 
         --theme-color: #ea915d;
