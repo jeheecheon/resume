@@ -26,26 +26,31 @@
     }
 
     h1 {
-        @apply text-[4.7rem];
+        @apply text-[2.6rem];
+        @apply sm:text-[4.7rem];
         @apply font-semibold;
-        @apply leading-[5.2rem];
+        @apply sm:leading-[4.5rem];
+        @apply sm:leading-[5.2rem];
         @apply mb-10;
     }
 
     h2 {
-        @apply text-[4rem];
+        @apply text-[2.3rem];
+        @apply sm:text-[4rem];
         @apply font-semibold;
-        @apply mt-10;
+        @apply mt-[4rem];
         @apply mb-2;
     }
 
     h3 {
-        @apply text-2xl;
+        @apply text-xl;
+        @apply sm:text-[1.8rem];
         @apply font-semibold;
     }
 
     h4 {
-        @apply text-xl;
+        @apply text-lg;
+        @apply sm:text-xl;
         @apply font-semibold;
     }
 
@@ -68,6 +73,10 @@
         @apply underline;
     }
 
+    ul {
+        @apply text-pretty;
+    }
+    
     ul li {
         @apply list-disc;
         @apply ml-5;
