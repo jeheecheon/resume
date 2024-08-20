@@ -89,5 +89,6 @@
 
     p {
         @apply text-inverse-1;
+        @apply text-pretty;
     }
 }

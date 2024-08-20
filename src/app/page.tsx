@@ -6,7 +6,6 @@ function Page() {
     const ref = useRef<HTMLDivElement>(null);
     useScrollDownAnimation(ref);
 
-
     return (
         <div ref={ref} className="whitespace-pre-line py-10">
             <Page.Greeting />
@@ -199,19 +198,14 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Project Review</h4>
                     <p className="leading-[1.6rem]">
-                        프로젝트 특성에 맞춰 모바일 친화적인 UI/UX를 디자인
-                        했습니다. Figma와 같은 디자인 툴을 다뤄본 적이 없기에
-                        스케치를 곧바로 코드로 옮기는 방법을 택했는데 세심한
-                        디테일에 신경쓰다보니 기존 디자인을 수정하는 일이 잦아
-                        많은 시간이 할애됐습니다.{'\n'}
-                        비동기 AI Call이 필요한 경우 유저에게 실시간 로딩 상태를
+                        비동기 AI Call을 호출할 때 유저에게 실시간 로딩 상태를
                         표시하여 반응성 높은 UX를 제공했습니다. Client-Side 에서
-                        비동기 로직을 다룰 때는 외부 상태관리 라이브러리 도움
-                        없이 React의 Suspense API를 활용하여 직접 처리해보기도
+                        비동기 로직을 다룰 때 외부 상태관리 라이브러리 도움 없이
+                        React의 Suspense API를 활용하여 직접 처리해보기도
                         했습니다.{'\n'}
                         원할한 협업을 위해 Git 컨벤션을 정의했고 Squash-Merge
                         등을 활용하여 PR 관리를 하려 했으나 백엔드의 배포 상태에
-                        결함이 있어 후반부에 제대로 지켜지지 못했습니다.
+                        결함이 있어 후반부에는 제대로 지켜지지 못했습니다.
                     </p>
                 </div>
 
@@ -265,8 +259,7 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Description</h4>
                     <p className="leading-[1.6rem]">
-                        개인 DB 서버를 활용하고 있습니다. Oatuh 로그인을
-                        지원하며 동적으로 글, 댓글 등을 저장하거나 불러옵니다.
+                        개인 DB를 가지고 있는 기술 블로그입니다.
                     </p>
                 </div>
 
@@ -283,18 +276,15 @@ Page.Projects = function Projects() {
                             </p>
                         </li>
                         <li>
-                            <p>반응형 UI/UX 디자인</p>
-                        </li>
-                        <li>
                             <p>
-                                AWS S3와 개인 DB를 활용하여 블로그 글에 첨부되는
-                                이미지 관리
+                                Quill html 편집 모듈을 통해 실시간으로 글 업로드
+                                및 수정
                             </p>
                         </li>
                         <li>
                             <p>
-                                Quill html 편집 모듈을 통해 실시간으로 글 업로드
-                                및 수정
+                                AWS S3와 개인 DB를 활용하여 블로그 글에 첨부되는
+                                이미지 저장
                             </p>
                         </li>
                         <li>
@@ -312,9 +302,7 @@ Page.Projects = function Projects() {
                         다소 느린 배포 서버가 사용자 경험에 미치는 영향을
                         최소화하기 위해 스켈레톤 UI 컴포넌트를 만들었습니다.
                         비동기 상태관리는 react-query를 사용하여 간단하게
-                        처리했습니다. CSRF 공격을 막기 위해 백엔드에서 문자열을
-                        정제하는 방법을 사용했습니다. 백엔드와 프론트의 전체적인
-                        흐름을 경험하고 배포까지 해보았습니다.
+                        처리했습니다.
                     </p>
                 </div>
 
@@ -374,8 +362,8 @@ Page.Projects = function Projects() {
                     <h4 className="mt-5 text-theme-1">Description</h4>
                     <p className="leading-[1.6rem]">
                         명지대 AO 스터디의 공식 웹사이트입니다. 스터디 홍보
-                        목적으로 제작되었으며, 신입 스터디원을 모집받기 위해
-                        지원서 제출을 받을 수 있습니다.
+                        목적으로 제작했으며, 실시간으로 지원서를 제출 받을 수
+                        있습니다.
                     </p>
                 </div>
 
@@ -384,8 +372,8 @@ Page.Projects = function Projects() {
                     <ul>
                         <li>
                             <p>
-                                Team 2의 멘토(팀장)으로 참여하여 프론트팀과
-                                백엔드팀의 질문 답변 및 코드 리뷰
+                                멘토(팀장)으로 참여하여 프론트팀과 백엔드팀의
+                                질문 답변 및 코드 리뷰
                             </p>
                         </li>
                         <li>
@@ -399,7 +387,7 @@ Page.Projects = function Projects() {
                         </li>
                         <li>
                             <p>
-                                Team 1과 Team 2의 프론트엔드 코드베이스 통합.
+                                두 팀이 개발한 프론트엔드 코드베이스 통합.
                                 Svelte 코드를 React 코드로 수정
                             </p>
                         </li>
