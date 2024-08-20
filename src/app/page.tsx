@@ -6,6 +6,7 @@ function Page() {
     const ref = useRef<HTMLDivElement>(null);
     useScrollDownAnimation(ref);
 
+
     return (
         <div ref={ref} className="whitespace-pre-line py-10">
             <Page.Greeting />
@@ -50,10 +51,10 @@ Page.Contact = function Contact() {
                 {/* <div className="w-full aspect-square max-w-[14rem] bg-gray-200 rounded-full sm:rounded-3xl" /> */}
 
                 <div className="w-full sm:w-fit px-3 sm:px-0 flex flex-col gap-y-3 justify-around">
-                    <div className="space-y-1">
+                    <div className="space-y-1 flex flex-col">
                         <h3>Reach me</h3>
 
-                        <div className="text-nowrap">
+                        <span className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Phone. '}
                             </p>
@@ -64,9 +65,9 @@ Page.Contact = function Contact() {
                             >
                                 010-9666-8460
                             </a>
-                        </div>
+                        </span>
 
-                        <div className="text-nowrap">
+                        <span className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Email. '}
                             </p>
@@ -77,13 +78,13 @@ Page.Contact = function Contact() {
                             >
                                 jeheecheon@gmail.com
                             </a>
-                        </div>
+                        </span>
                     </div>
 
-                    <div className="space-y-1">
+                    <div className="space-y-1 flex flex-col">
                         <h3>Channel</h3>
 
-                        <div className="text-nowrap">
+                        <span className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Blog. '}
                             </p>
@@ -96,9 +97,9 @@ Page.Contact = function Contact() {
                             >
                                 https://blog.jeheecheon.com
                             </a>
-                        </div>
+                        </span>
 
-                        <div className="text-nowrap">
+                        <span className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Github. '}
                             </p>
@@ -111,7 +112,7 @@ Page.Contact = function Contact() {
                             >
                                 https://github.com/jeheecheon
                             </a>
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -242,7 +243,7 @@ Page.Projects = function Projects() {
 
                 <div>
                     <h4 className="mt-5 text-theme-1">Skillset I Used</h4>
-                    <div className="flex flex-wrap mt-1 gap-2">
+                    <aside className="flex flex-wrap mt-1 gap-2">
                         <Tag>next.js</Tag>
                         <Tag>typescript</Tag>
                         <Tag>tailwindcss</Tag>
@@ -250,7 +251,7 @@ Page.Projects = function Projects() {
                         <Tag>AWS</Tag>
                         <Tag>Docker</Tag>
                         <Tag>github actions</Tag>
-                    </div>
+                    </aside>
                 </div>
             </div>
 
@@ -366,7 +367,7 @@ Page.Projects = function Projects() {
                 <h3>AO 스터디 공식 웹사이트</h3>
                 <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 01. ~ 2024. 02.{'\n'}
-                    Team 2 멘토 | 총 12명
+                    멘토 | 총 12명
                 </p>
 
                 <div>
@@ -388,7 +389,7 @@ Page.Projects = function Projects() {
                             </p>
                         </li>
                         <li>
-                            <p>Team 2의 git 컨벤션 구성</p>
+                            <p>git 컨벤션 구성</p>
                         </li>
                         <li>
                             <p>
