@@ -10,6 +10,8 @@ export default {
                 },
                 inverse: {
                     1: 'var(--inverse-color-1)',
+                    2: 'var(--inverse-color-2)',
+                    3: 'var(--inverse-color-3)',
                 },
             },
         },

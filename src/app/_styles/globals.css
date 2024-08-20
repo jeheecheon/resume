@@ -12,13 +12,70 @@
     :root {
         --bg-color: #ffffff;
         --inverse-color-1: #222222;
+        --inverse-color-2: #333333;
+        --inverse-color-3: #807b7b;
 
-        --theme-color: #3a7bd5;
+        --theme-color: #ea915d;
     }
 
     .dark {
         --bg-color: #060606;
         --inverse-color-1: #f5f6f7;
+        --inverse-color-2: #dfe2e9;
+        --inverse-color-3: #c1c3c9;
+    }
+
+    h1 {
+        @apply text-[4.7rem];
+        @apply font-semibold;
+        @apply leading-[5.2rem];
+        @apply mb-10;
+    }
+
+    h2 {
+        @apply text-[4rem];
+        @apply font-semibold;
+        @apply mt-10;
+        @apply mb-2;
+    }
+
+    h3 {
+        @apply text-2xl;
+        @apply font-semibold;
+    }
+
+    h4 {
+        @apply text-xl;
+        @apply font-semibold;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply after:content-['.'];
+        @apply after:text-theme-1;
+    }
+
+    ::selection {
+        background-color: var(--theme-color);
+        color: #ffffff;
+    }
+
+    a {
+        @apply font-light;
+        @apply text-inverse-3;
+        @apply underline;
+    }
+
+    ul li {
+        @apply list-disc;
+        @apply ml-5;
+        @apply text-theme-1;
+    }
+
+    p {
+        @apply text-inverse-1;
     }
 }
 

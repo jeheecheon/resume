@@ -14,12 +14,9 @@ function Layout({ children }: LayoutProps) {
         <div className="font-['Pretendard'] text-inverse-1 bg-color min-h-full 
         transition-colors duration-300">
             <GradientBar />
+            <ThemeSwitch />
 
-            <div className="flex pt-4 pr-4">
-                <ThemeSwitch />
-            </div>
-
-            <div className="max-w-[50rem] mx-auto ">{children}</div>
+            <div className="max-w-[50rem] mx-auto px-3">{children}</div>
         </div>
     );
 }

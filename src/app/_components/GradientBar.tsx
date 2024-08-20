@@ -1,10 +1,13 @@
 function GradientBar() {
     return (
-        <div
-            className="h-[0.6rem]
-            bg-gradient-to-r from-blue-500 via-blue-400 to-sky-300
-            dark:from-slate-900 dark:via-stone-900 dark:to-neutral-900"
-        />
+        <>
+            {/* Place holder */}
+            <div className="h-[0.6rem]" />
+            <div
+                className="fixed w-full top-0 h-[0.6rem]
+                    bg-gradient-to-r from-orange-300 to-orange-100"
+            />
+        </>
     );
 }
 
