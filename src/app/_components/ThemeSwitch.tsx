@@ -18,7 +18,7 @@ function ThemeSwitch({ className }: ThemeSwitchProps) {
     }
 
     return (
-        <div className="fixed w-full flex pt-4 pr-4">
+        <div className="fixed w-full flex pt-4 pr-4 z-[1]">
             <button
                 title="Toggle Theme"
                 className={`ml-auto py-2 px-5 drop-shadow-md rounded-md bg-stone-100 dark:bg-[#191919]

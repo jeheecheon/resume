@@ -17,15 +17,12 @@ function useScrollDownAnimation(ref: React.RefObject<HTMLElement>) {
         ref.current
             .querySelectorAll('h1, h2, h3, h4, h5, h6, p, ul, li, div')
             .forEach((tag) => {
-                if (!tag.classList.contains('fixed')) {
-                    observer.observe(tag);
-                    tag.classList.add('opacity-0');
-                    tag.classList.add('translate-y-10');
-                    tag.classList.add('duration-[600ms]');
-                    tag.classList.add('transition-all');
-                    tag.classList.add('ease-in-out');
-
-                }
+                observer.observe(tag);
+                tag.classList.add('opacity-0');
+                tag.classList.add('translate-y-10');
+                tag.classList.add('duration-[600ms]');
+                tag.classList.add('transition-all');
+                tag.classList.add('ease-in-out');
             });
     }, [ref]);
 

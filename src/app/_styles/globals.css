@@ -10,6 +10,10 @@
     }
 
     :root {
+        @apply bg-color;
+        @apply font-['Pretendard'];
+        @apply text-inverse-1;
+        
         --bg-color: #ffffff;
         --inverse-color-1: #222222;
         --inverse-color-2: #333333;
@@ -76,7 +80,7 @@
     ul {
         @apply text-pretty;
     }
-    
+
     ul li {
         @apply list-disc;
         @apply ml-5;
