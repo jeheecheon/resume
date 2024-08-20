@@ -9,6 +9,8 @@ export function adjustThemeColor(isDarkMode: boolean) {
 
     const themeColor = isDarkMode ? '#060606' : '#ffffff';
 
+    document.documentElement.style.backgroundColor = themeColor;
+
     const metas = document.head.getElementsByTagName('meta');
 
     for (const meta of metas) {

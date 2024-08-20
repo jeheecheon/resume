@@ -12,7 +12,8 @@
     :root {
         @apply font-['Pretendard'];
         @apply text-inverse-1;
-        @apply bg-[var(--bg-color)];
+        @apply transition-colors;
+        @apply duration-700;
 
         --bg-color: #ffffff;
         --inverse-color-1: #424242;
@@ -90,5 +91,11 @@
     p {
         @apply text-inverse-1;
         @apply text-pretty;
+    }
+}
+
+@layer utilities {
+    .bg-body {
+        background-color: var(--bg-color);
     }
 }
