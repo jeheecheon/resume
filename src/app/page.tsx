@@ -49,7 +49,7 @@ Page.Contact = function Contact() {
             <div className="flex flex-col sm:flex-row gap-x-4 items-center">
                 {/* <div className="w-full aspect-square max-w-[14rem] bg-gray-200 rounded-full sm:rounded-3xl" /> */}
 
-                <div className="w-full sm:w-fit px-3 sm:px-0 flex flex-col gap-y-3 justify-around">
+                <div className="w-full sm:w-fit px-3 sm:px-0 flex flex-col gap-y-5 justify-around sm:text-lg">
                     <div className="space-y-1 flex flex-col">
                         <h3>Reach me</h3>
 
@@ -60,7 +60,6 @@ Page.Contact = function Contact() {
                             <a
                                 title="Phone Number"
                                 href="tel:010-9666-8460"
-                                className="text-sm"
                             >
                                 010-9666-8460
                             </a>
@@ -73,7 +72,6 @@ Page.Contact = function Contact() {
                             <a
                                 title="Email"
                                 href="mailto:jeheecheon@gmail.com"
-                                className="text-sm"
                             >
                                 jeheecheon@gmail.com
                             </a>
@@ -90,7 +88,6 @@ Page.Contact = function Contact() {
                             <a
                                 title="Blog"
                                 href="https://blog.jeheecheon.com"
-                                className="text-sm"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -105,7 +102,6 @@ Page.Contact = function Contact() {
                             <a
                                 title="Github"
                                 href="https://github.com/jeheecheon"
-                                className="text-sm"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -211,7 +207,7 @@ Page.Projects = function Projects() {
 
                 <div className="mt-5 text-theme-1">
                     <h4>Links</h4>
-                    <p className="text-sm">
+                    <p className="text-sm sm:text-base">
                         <span>시연 영상. </span>
                         <a
                             title="먹짐마 시연 영상"
@@ -222,7 +218,7 @@ Page.Projects = function Projects() {
                             https://www.youtube.com/watch?v=lX7CzpYh6HU
                         </a>
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm sm:text-base">
                         <span>깃허브 리포. </span>
                         <a
                             title="먹짐마 깃허브 리포"
@@ -308,7 +304,7 @@ Page.Projects = function Projects() {
 
                 <div className="mt-5 text-theme-1">
                     <h4>Links</h4>
-                    <p className="text-sm">
+                    <p className="text-sm sm:text-base">
                         <span>배포 링크. </span>
                         <a
                             title="개인 블로그"
@@ -319,7 +315,7 @@ Page.Projects = function Projects() {
                             https://blog.jeheecheon.com
                         </a>
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm sm:text-base">
                         <span>깃허브 리포. </span>
                         <a
                             title="개인 블로그 깃허브 리포"
@@ -411,7 +407,7 @@ Page.Projects = function Projects() {
 
                 <div className="mt-5 text-theme-1">
                     <h4>Links</h4>
-                    <p className="text-sm">
+                    <p className="text-sm sm:text-base">
                         <span>배포 링크. </span>
                         <a
                             title="AO 스터디 공식 웹사이트"
@@ -422,7 +418,7 @@ Page.Projects = function Projects() {
                             https://www.fireao.com/
                         </a>
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm sm:text-base">
                         <span>깃허브 리포. </span>
                         <a
                             title="AO 스터디 공식 웹사이트 깃허브 리포"
