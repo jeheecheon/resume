@@ -1,7 +1,7 @@
 import Tag from '@/_components/Tag';
 import { useRef } from 'react';
 import useScrollDownAnimation from '@/_hooks/useScrollDownAnimation';
-
+import profileImg from '@/_images/profile.jpg';
 function Page() {
     const ref = useRef<HTMLDivElement>(null);
     useScrollDownAnimation(ref);
@@ -46,21 +46,23 @@ Page.Contact = function Contact() {
         <div>
             <h2>Contact</h2>
 
-            <div className="flex flex-col sm:flex-row gap-x-4 items-center">
-                {/* <div className="w-full aspect-square max-w-[14rem] bg-gray-200 rounded-full sm:rounded-3xl" /> */}
+            <div className="flex flex-col items-center sm:items-start sm:flex-row-reverse justify-between gap-y-3 ">
+                <img
+                    src={profileImg}
+                    alt="Profile Image"
+                    title="Profile Image"
+                    className={`aspect-square rounded-full sm:max-h-[18rem] md:max-h-[21rem] h-full max-h-[20rem]`}
+                />
 
-                <div className="w-full sm:w-fit px-3 sm:px-0 flex flex-col gap-y-5 justify-around sm:text-lg">
-                    <div className="space-y-1 flex flex-col">
+                <div className="flex flex-col gap-y-5 sm:text-lg">
+                    <div className="space-y-1 flex flex-col h-fit">
                         <h3>Reach me</h3>
 
                         <span className="text-nowrap">
                             <p className="inline font-medium text-theme-1">
                                 {'Phone. '}
                             </p>
-                            <a
-                                title="Phone Number"
-                                href="tel:010-9666-8460"
-                            >
+                            <a title="Phone Number" href="tel:010-9666-8460">
                                 010-9666-8460
                             </a>
                         </span>
@@ -69,16 +71,13 @@ Page.Contact = function Contact() {
                             <p className="inline font-medium text-theme-1">
                                 {'Email. '}
                             </p>
-                            <a
-                                title="Email"
-                                href="mailto:jeheecheon@gmail.com"
-                            >
+                            <a title="Email" href="mailto:jeheecheon@gmail.com">
                                 jeheecheon@gmail.com
                             </a>
                         </span>
                     </div>
 
-                    <div className="space-y-1 flex flex-col">
+                    <div className="space-y-1 flex flex-col h-fit">
                         <h3>Channel</h3>
 
                         <span className="text-nowrap">
@@ -95,7 +94,7 @@ Page.Contact = function Contact() {
                             </a>
                         </span>
 
-                        <span className="text-nowrap">
+                        <span className="">
                             <p className="inline font-medium text-theme-1">
                                 {'Github. '}
                             </p>
@@ -194,9 +193,9 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Project Review</h4>
                     <p className="leading-[1.6rem]">
-                        비동기 AI Call을 호출할 때 실시간 로딩 상태를
-                        표시하여 반응성 높은 UX를 제공했습니다. Client-Side 에서
-                        비동기 로직을 다룰 때 외부 상태관리 라이브러리 도움 없이
+                        비동기 AI Call을 호출할 때 실시간 로딩 상태를 표시하여
+                        반응성 높은 UX를 제공했습니다. Client-Side 에서 비동기
+                        로직을 다룰 때 외부 상태관리 라이브러리 도움 없이
                         React의 Suspense API를 활용하여 직접 처리해보기도
                         했습니다.{'\n'}
                         원할한 협업을 위해 Git 컨벤션을 정의했고 Squash-Merge
