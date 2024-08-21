@@ -11,7 +11,7 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
     return (
-        <div className="min-h-full">
+        <div className="min-h-full bg-[var(--bg-color)] transition-colors duration-700">
             <GradientBar />
             <ThemeSwitch />
 

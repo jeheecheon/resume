@@ -1,6 +1,6 @@
 import Tag from '@/_components/Tag';
 import { useRef } from 'react';
-import useScrollDownAnimation from './_hooks/useScrollDownAnimation';
+import useScrollDownAnimation from '@/_hooks/useScrollDownAnimation';
 
 function Page() {
     const ref = useRef<HTMLDivElement>(null);

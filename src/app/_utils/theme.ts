@@ -7,7 +7,9 @@ export function adjustThemeColor(isDarkMode: boolean) {
     document.documentElement.classList.toggle('dark', isDarkMode);
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 
-    const themeColor = isDarkMode ? '#060606' : '#ffffff';
+    const themeColor = getComputedStyle(
+        document.documentElement
+    ).getPropertyValue('--bg-body');
 
     document.documentElement.style.backgroundColor = themeColor;
 
