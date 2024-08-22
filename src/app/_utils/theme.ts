@@ -11,7 +11,7 @@ export function adjustThemeColor(isDarkMode: boolean) {
         document.documentElement
     ).getPropertyValue('--bg-color');
 
-    document.documentElement.style.backgroundColor = themeColor;
+    // document.documentElement.style.backgroundColor = themeColor;
 
     const metas = document.head.getElementsByTagName('meta');
 
