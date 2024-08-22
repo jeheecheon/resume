@@ -472,20 +472,6 @@ Page.Projects = function Projects() {
     );
 };
 
-Page.Education = function Education() {
-    return (
-        <div>
-            <h2>Education</h2>
-            <div className="mt-[1.5rem]">
-                <h3 className="text-theme-1">명지대학교 - 컴퓨터공학과</h3>
-                <p className="text-xs sm:text-sm">
-                    2018. 03. ~ 2025. 02. (재학 중)
-                </p>
-            </div>
-        </div>
-    );
-};
-
 Page.AwardsAndScores = function AwardsAndScores() {
     return (
         <div>
@@ -493,7 +479,7 @@ Page.AwardsAndScores = function AwardsAndScores() {
             <div>
                 <h3 className="text-theme-1">
                     캡스톤디자인 경진 대회 -
-                    <span className="text-inverse-1">{` 동상`}</span>
+                    <span className="dark:text-inverse-1">{` 동상`}</span>
                 </h3>
                 <p className="text-xs sm:text-sm">2024. 06. 10.</p>
             </div>
@@ -501,16 +487,33 @@ Page.AwardsAndScores = function AwardsAndScores() {
             <div className="mt-[1.5rem]">
                 <h3 className="text-theme-1">
                     디지털 리터리스 PT 경진대회 -
-                    <span className="text-inverse-1">{` 우수상`}</span>
+                    <span className="dark:text-inverse-1">{` 우수상`}</span>
                 </h3>
                 <p className="text-xs sm:text-sm">2023. 12. 27.</p>
             </div>
 
             <div className="mt-[1.5rem]">
                 <h3 className="text-theme-1">
-                    토익 -<span className="text-inverse-1">{` 855점`}</span>
+                    토익 -<span className="dark:text-inverse-1">{` 855점`}</span>
                 </h3>
                 <p className="text-xs sm:text-sm">2023. 08. 06.</p>
+            </div>
+        </div>
+    );
+};
+
+Page.Education = function Education() {
+    return (
+        <div>
+            <h2>Education</h2>
+            <div className="mt-[1.5rem]">
+                <h3 className="text-theme-1">
+                    명지대학교 -
+                    <span className="dark:text-inverse-1">{` 우수상`}</span>
+                </h3>
+                <p className="text-xs sm:text-sm">
+                    2018. 03. ~ 2025. 02. (재학 중)
+                </p>
             </div>
         </div>
     );
