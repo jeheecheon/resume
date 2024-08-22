@@ -9,14 +9,13 @@ function Page() {
     useScrollDownAnimation(ref);
 
     return (
-        <div ref={ref} className="whitespace-pre-line py-10">
+        <div ref={ref} className="whitespace-pre-line pt-10 pb-[30vh]">
             <Page.Greeting />
             <Page.Introduction />
             <Page.Contact />
             <Page.Projects />
+            <Page.AwardsAndScores />
             <Page.Education />
-
-            <div className="h-[30vh]"></div>
         </div>
     );
 }
@@ -74,18 +73,14 @@ Page.Contact = function Contact() {
                         <h3 className="text-theme-1">Reach me</h3>
 
                         <span className="text-nowrap">
-                            <p className="inline">
-                                {'Phone. '}
-                            </p>
+                            <p className="inline">{'Phone. '}</p>
                             <a title="Phone Number" href="tel:010-9666-8460">
                                 010-9666-8460
                             </a>
                         </span>
 
                         <span className="text-nowrap">
-                            <p className="inline">
-                                {'Email. '}
-                            </p>
+                            <p className="inline">{'Email. '}</p>
                             <a title="Email" href="mailto:jeheecheon@gmail.com">
                                 jeheecheon@gmail.com
                             </a>
@@ -96,9 +91,7 @@ Page.Contact = function Contact() {
                         <h3 className="text-theme-1">Channel</h3>
 
                         <span className="text-nowrap">
-                            <p className="inline">
-                                {'Blog. '}
-                            </p>
+                            <p className="inline">{'Blog. '}</p>
                             <a
                                 title="Blog"
                                 href="https://blog.jeheecheon.com"
@@ -110,9 +103,7 @@ Page.Contact = function Contact() {
                         </span>
 
                         <span className="text-nowrap">
-                            <p className="inline">
-                                {'Github. '}
-                            </p>
+                            <p className="inline">{'Github. '}</p>
                             <a
                                 title="Github"
                                 href="https://github.com/jeheecheon"
@@ -491,9 +482,34 @@ Page.Education = function Education() {
                     2018. 03. ~ 2025. 02. (재학 중)
                 </p>
             </div>
+        </div>
+    );
+};
+
+Page.AwardsAndScores = function AwardsAndScores() {
+    return (
+        <div>
+            <h2>Awards & Scores</h2>
+            <div>
+                <h3 className="text-theme-1">
+                    캡스톤디자인 경진 대회 -
+                    <span className="text-inverse-1">{` 동상`}</span>
+                </h3>
+                <p className="text-xs sm:text-sm">2024. 06. 10.</p>
+            </div>
 
             <div className="mt-[1.5rem]">
-                <h3 className="text-theme-1">토익 - 855점</h3>
+                <h3 className="text-theme-1">
+                    디지털 리터리스 PT 경진대회 -
+                    <span className="text-inverse-1">{` 우수상`}</span>
+                </h3>
+                <p className="text-xs sm:text-sm">2023. 12. 27.</p>
+            </div>
+
+            <div className="mt-[1.5rem]">
+                <h3 className="text-theme-1">
+                    토익 -<span className="text-inverse-1">{` 855점`}</span>
+                </h3>
                 <p className="text-xs sm:text-sm">2023. 08. 06.</p>
             </div>
         </div>
