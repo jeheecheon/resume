@@ -522,7 +522,7 @@ Page.Education = function Education() {
             <div className="mt-[1.5rem]">
                 <h3 className="text-theme-1">
                     <span>명지대학교 -</span>
-                    <span className="dark:text-inverse-1">{` 우수상`}</span>
+                    <span className="dark:text-inverse-1">{` 컴퓨터공학과`}</span>
                 </h3>
                 <p className="text-xs sm:text-sm">
                     2018. 03. ~ 2025. 02. (재학 중)
