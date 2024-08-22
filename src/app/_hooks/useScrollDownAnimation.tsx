@@ -14,7 +14,7 @@ function useScrollDownAnimation(ref: React.RefObject<HTMLElement>) {
         });
 
         ref.current
-            .querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, span, li')
+            .querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, span, li, img')
             .forEach((tag) => {
                 observer.observe(tag);
                 tag.classList.add('opacity-0');

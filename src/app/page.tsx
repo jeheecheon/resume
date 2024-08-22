@@ -1,7 +1,9 @@
 import Tag from '@/_components/Tag';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import useScrollDownAnimation from '@/_hooks/useScrollDownAnimation';
-import profileImg from '@/_images/profile.jpg';
+import profileImg from '@/_images/profile.webp';
+import Spinner from './_components/Spinner';
+
 function Page() {
     const ref = useRef<HTMLDivElement>(null);
     useScrollDownAnimation(ref);
@@ -42,24 +44,37 @@ Page.Introduction = function Introduction() {
 };
 
 Page.Contact = function Contact() {
+    const [isLoaded, setIsLoaded] = useState(false);
+
     return (
         <div>
             <h2>Contact</h2>
 
             <div className="flex flex-col items-center sm:items-start sm:flex-row-reverse justify-between gap-y-3 ">
-                <img
-                    src={profileImg}
-                    alt="Profile Image"
-                    title="Profile Image"
-                    className={`aspect-square rounded-full sm:max-h-[18rem] md:max-h-[21rem] h-full max-h-[20rem]`}
-                />
+                <div>
+                    <Spinner
+                        className={`sm:w-[18rem] sm:h-[18rem] md:h-[21rem] md:w-[21rem] h-[20rem] w-[20rem]
+                    ${isLoaded && 'hidden'}`}
+                    />
 
-                <div className="flex flex-col gap-y-5 sm:text-lg">
-                    <div className="space-y-1 flex flex-col h-fit">
-                        <h3>Reach me</h3>
+                    <img
+                        src={profileImg}
+                        className={`w-full h-full sm:max-w-[18rem] sm:max-h-[18rem] md:max-h-[21rem] md:max-w-[21rem] 
+                        max-h-[20rem] max-w-[20rem] rounded-full ${
+                            !isLoaded && 'hidden'
+                        }`}
+                        onLoad={() => setIsLoaded(true)}
+                        alt="Profile Image"
+                        title="Profile Image"
+                    />
+                </div>
+
+                <div className="flex flex-col gap-y-5">
+                    <div className="space-y-1 flex flex-col h-fit gap-[0.1rem]">
+                        <h3 className="text-theme-1">Reach me</h3>
 
                         <span className="text-nowrap">
-                            <p className="inline font-medium text-theme-1">
+                            <p className="inline">
                                 {'Phone. '}
                             </p>
                             <a title="Phone Number" href="tel:010-9666-8460">
@@ -68,7 +83,7 @@ Page.Contact = function Contact() {
                         </span>
 
                         <span className="text-nowrap">
-                            <p className="inline font-medium text-theme-1">
+                            <p className="inline">
                                 {'Email. '}
                             </p>
                             <a title="Email" href="mailto:jeheecheon@gmail.com">
@@ -77,11 +92,11 @@ Page.Contact = function Contact() {
                         </span>
                     </div>
 
-                    <div className="space-y-1 flex flex-col h-fit">
-                        <h3>Channel</h3>
+                    <div className="space-y-1 flex flex-col h-fit gap-[0.1rem]">
+                        <h3 className="text-theme-1">Channel</h3>
 
                         <span className="text-nowrap">
-                            <p className="inline font-medium text-theme-1">
+                            <p className="inline">
                                 {'Blog. '}
                             </p>
                             <a
@@ -94,8 +109,8 @@ Page.Contact = function Contact() {
                             </a>
                         </span>
 
-                        <span className="">
-                            <p className="inline font-medium text-theme-1">
+                        <span className="text-nowrap">
+                            <p className="inline">
                                 {'Github. '}
                             </p>
                             <a

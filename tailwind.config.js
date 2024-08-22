@@ -25,9 +25,21 @@ export default {
                         transform: 'translateY(0)',
                     },
                 },
+                'fade-in-lazy': {
+                    '0%': {
+                        opacity: 0,
+                    },
+                    '50%': {
+                        opacity: 0,
+                    },
+                    '100%': {
+                        opacity: 1,
+                    },
+                }
             },
             animation: {
                 'fade-in': 'fade-in 0.6s ease-in-out',
+                'fade-in-lazy': 'fade-in-lazy 1.2s ease-in-out',
             },
         },
     },
