@@ -7,13 +7,12 @@
     body,
     #root {
         height: 100%;
+        background-color: var(--bg-color);
     }
 
     :root {
         @apply font-['Pretendard'];
         @apply text-inverse-1;
-        /* @apply transition-colors;
-        @apply duration-700; */
 
         --bg-color: #ffffff;
         --inverse-color-1: #404040;

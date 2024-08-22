@@ -9,7 +9,7 @@ export function adjustThemeColor(isDarkMode: boolean) {
 
     const themeColor = getComputedStyle(
         document.documentElement
-    ).getPropertyValue('--bg-body');
+    ).getPropertyValue('--bg-color');
 
     document.documentElement.style.backgroundColor = themeColor;
 
@@ -17,8 +17,7 @@ export function adjustThemeColor(isDarkMode: boolean) {
 
     for (const meta of metas) {
         if (
-            meta.name === 'theme-color' ||
-            meta.name === 'msapplication-navbutton-color'
+            ['theme-color', 'msapplication-navbutton-color'].includes(meta.name)
         ) {
             meta.content = themeColor;
         }

@@ -10,7 +10,7 @@ export const useThemeStore = create<ThemeState>((set) => ({
     isDarkMode: isDarkMode,
 
     setDarkMode: (mode) => {
-        adjustThemeColor(mode);
         set(() => ({ isDarkMode: mode }));
+        adjustThemeColor(mode);
     },
 }));
