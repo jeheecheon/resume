@@ -129,7 +129,7 @@ Page.Projects = function Projects() {
                     먹짐마 - 캡스톤디자인 경진 대회{' '}
                     <span className="text-theme-1">(동상)</span>
                 </h3>
-                <p className="sm:mt-1 text-xs sm:text-base leading-[6rem]">
+                <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 03. ~ 2024. 05.{'\n'}
                     팀장 | 총 4명
                 </p>
@@ -212,6 +212,17 @@ Page.Projects = function Projects() {
                             https://github.com/jeheecheon/muckGYMma
                         </a>
                     </p>
+                    <p className="text-sm sm:text-base">
+                        <span>관련 블로그 글. </span>
+                        <a
+                            title="관련 블로그 글"
+                            href="https://blog.jeheecheon.com/posts/549f411e-5a17-4882-87cc-0d0eec2c62a9"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            https://blog.jeheecheon.com/posts/549f411e-5a17-4882-87cc-0d0eec2c62a9
+                        </a>
+                    </p>
                 </div>
 
                 <div>
@@ -230,7 +241,7 @@ Page.Projects = function Projects() {
 
             <div className="mt-[4.5rem]">
                 <h3>개인 블로그 개발</h3>
-                <p className="sm:mt-1 text-xs sm:text-base">
+                <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 01. ~ 2024. 02.{'\n'}
                     개인 프로젝트 (유지보수 중)
                 </p>
@@ -309,6 +320,17 @@ Page.Projects = function Projects() {
                             https://github.com/jeheecheon/blog
                         </a>
                     </p>
+                    <p className="text-sm sm:text-base">
+                        <span>관련 블로그 글. </span>
+                        <a
+                            title="관련 블로그 글"
+                            href="https://blog.jeheecheon.com/posts/57998974-f98f-4afd-be3f-92e1166d74a1"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            https://blog.jeheecheon.com/posts/57998974-f98f-4afd-be3f-92e1166d74a1
+                        </a>
+                    </p>
                 </div>
 
                 <div>
@@ -332,7 +354,7 @@ Page.Projects = function Projects() {
 
             <div className="mt-[4.5rem]">
                 <h3>AO 스터디 공식 웹사이트</h3>
-                <p className="sm:mt-1 text-xs sm:text-base">
+                <p className="sm:mt-1 text-xs sm:text-sm">
                     2024. 01. ~ 2024. 02.{'\n'}
                     멘토 | 총 12명
                 </p>
@@ -400,6 +422,17 @@ Page.Projects = function Projects() {
                             https://github.com/Fire-AO/official-website
                         </a>
                     </p>
+                    <p className="text-sm sm:text-base">
+                        <span>관련 블로그 글. </span>
+                        <a
+                            title="관련 블로그 글"
+                            href="https://blog.jeheecheon.com/posts/1ca1a00a-6465-45c3-bd37-0d713aae2595"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            https://blog.jeheecheon.com/posts/1ca1a00a-6465-45c3-bd37-0d713aae2595
+                        </a>
+                    </p>
                 </div>
 
                 <div>
@@ -418,9 +451,10 @@ Page.Projects = function Projects() {
             <div className="mt-[4.5rem]">
                 <h3>Etc</h3>
                 <p className="mt-1">
-                    이외 진행했던 프로젝트들은 아래 링크에서 확인할 수 있습니다.
+                    이외 진행했던 프로젝트들은 제 블로그의 프로젝트 카테고리에서
+                    확인하실 수 있습니다.
                 </p>
-                <p className="text-xs sm:text-sm">
+                <p className="mt-2 text-xs sm:text-sm">
                     <span className="font-medium text-theme-1">
                         Projects Cagetory.{' '}
                     </span>

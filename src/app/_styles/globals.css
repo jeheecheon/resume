@@ -30,10 +30,10 @@
     }
 
     h1 {
-        @apply text-[2.6rem];
+        @apply text-[2.7rem];
         @apply sm:text-[4.7rem];
         @apply font-semibold;
-        @apply leading-[4.5rem];
+        @apply leading-[3.1rem];
         @apply sm:leading-[5.2rem];
         @apply mb-10;
     }
@@ -88,8 +88,9 @@
     }
 
     p {
-        @apply text-[1.05rem];
+        @apply text-[1.08rem];
         @apply text-inverse-1;
         @apply text-pretty;
+        /* @apply font-[300] */
     }
 }
