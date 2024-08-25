@@ -15,7 +15,7 @@
         @apply text-inverse-1;
 
         --bg-color: #ffffff;
-        --inverse-color-1: #404040;
+        --inverse-color-1: #333333;
         --inverse-color-2: #525252;
         --inverse-color-3: #807b7b;
 
@@ -33,7 +33,7 @@
         @apply text-[2.6rem];
         @apply sm:text-[4.7rem];
         @apply font-semibold;
-        @apply sm:leading-[4.5rem];
+        @apply leading-[4.5rem];
         @apply sm:leading-[5.2rem];
         @apply mb-10;
     }
@@ -47,14 +47,14 @@
     }
 
     h3 {
-        @apply text-[1.5rem];
-        @apply sm:text-[1.8rem];
+        @apply text-[1.6rem];
+        @apply sm:text-[2rem];
         @apply font-semibold;
     }
 
     h4 {
-        @apply text-[1.4rem];
-        @apply sm:text-[1.7rem];
+        @apply text-[1.5rem];
+        @apply sm:text-[1.9rem];
         @apply font-semibold;
     }
 
@@ -88,6 +88,7 @@
     }
 
     p {
+        @apply text-[1.05rem];
         @apply text-inverse-1;
         @apply text-pretty;
     }

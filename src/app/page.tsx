@@ -34,10 +34,9 @@ Page.Introduction = function Introduction() {
     return (
         <p className="text-[1.3rem] sm:text-[1.7rem] leading-[2.2rem] sm:leading-[3.1rem] text-pretty">
             {`"코드의 깊이"`}를 중시하는 프론트엔드 개발자입니다. 단순한
-            기능구현을 넘어서 동작 원리를 이해하고, 최적화된 코드를 작성하는
-            것을 지향합니다. 개발자의 가치는 능동적인 협업력과 성장력이라
-            믿습니다. 새로운 기술과 도구를 학습하며 지속적으로 성장하고자
-            노력합니다.
+            기능구현을 넘어서 동작 원리를 이해하고, 간결한 코드를 작성하는 것을
+            지향합니다. 개발자의 가치는 능동적인 협업력과 성장력이라 믿습니다.
+            새로운 기술과 도구를 학습하며 지속적으로 성장하고자 노력합니다.
         </p>
     );
 };
@@ -127,10 +126,10 @@ Page.Projects = function Projects() {
 
             <div>
                 <h3>
-                    명지대학교 캡스톤디자인 경진 대회
-                    <span className="text-theme-1">{` (동상)`}</span>
+                    먹짐마 - 캡스톤디자인 경진 대회{' '}
+                    <span className="text-theme-1">(동상)</span>
                 </h3>
-                <p className="sm:mt-1 text-xs sm:text-sm">
+                <p className="sm:mt-1 text-xs sm:text-base leading-[6rem]">
                     2024. 03. ~ 2024. 05.{'\n'}
                     팀장 | 총 4명
                 </p>
@@ -138,38 +137,13 @@ Page.Projects = function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Description</h4>
 
-                    <p className="text-base leading-[1.6rem]">
+                    <p className="leading-[1.6rem]">
                         먹짐마 (웹앱).{'\n'}
-                        헬스장을 의미하는 단어 Gym과 많이 먹는 것을 자제하라는
-                        의미가 포함된 프로젝트명입니다. 사용자의 식단 관리 및
-                        운동 계획을 지원하며 인스타 형식의 커뮤니티를
-                        제공합니다.{'\n\n'}
+                        인공지능을 통해 식단 관리와 운동 계획을 관리 받는
+                        웹앱입니다. 촬영한 음식 사진 속 칼로리와 식단을 분석
+                        받거나 운동 계획을 추천받을 수 있으며, 인스타 형식의
+                        커뮤니티 공간을 제공합니다.
                     </p>
-                    <ul>
-                        <li>
-                            <p>
-                                촬영한 음식 사진의 칼로리와 식단을 AI가 분석 및
-                                진단
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                사용자에게 적합한 운동플랜을 자동 생성 후 추천
-                            </p>
-                        </li>
-                        <li>
-                            <p>타이머와 함께 운동플랜 진행</p>
-                        </li>
-                        <li>
-                            <p>
-                                운동일지와 식단일지를 작성하고 공유할 수 있는
-                                인스타 형식의 커뮤니티 공간 제공
-                            </p>
-                        </li>
-                        <li>
-                            <p>하루 물 섭취량 관리</p>
-                        </li>
-                    </ul>
                 </div>
 
                 <div>
@@ -177,37 +151,41 @@ Page.Projects = function Projects() {
                     <ul>
                         <li>
                             <p>
-                                팀장으로서 프로젝트 회의 진행. 아이디어 산출 및
-                                Git컨벤션을 정의
+                                팀장으로서 프로젝트 회의를 진행 및 Git 컨벤션
+                                정의.
                             </p>
                         </li>
                         <li>
                             <p>
-                                AWS의 EC2 관리 및 Nginx를 세팅. Github Actions와
-                                Docker를 통한 CI/CD 환경 구축
+                                AWS EC2에 nginx 웹서버 세팅. github actions와
+                                Docker를 활용하여 CI/CD 환경 구축.
                             </p>
                         </li>
                         <li>
-                            <p>단독으로 프론트 개발</p>
+                            <p>
+                                Next.js를 활용하여 단독으로 프론트엔드 파트
+                                개발.
+                            </p>
                         </li>
                         <li>
-                            <p>모바일 친화적인 UI/UX 디자인</p>
+                            <p>
+                                외부 라이브러리 도움을 받지 않고 비동기 상태
+                                React의 Suspense API를 통해 처리.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                사진 업로드 시 이미지 크롭, 확대, 회전 등의 기능
+                                구현. react-easy-crop npm 모듈 활용.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                비동기 데이터 로딩 중 로딩 상태임을 나타내는 UI
+                                표시.
+                            </p>
                         </li>
                     </ul>
-                </div>
-
-                <div>
-                    <h4 className="mt-5 text-theme-1">Project Review</h4>
-                    <p className="leading-[1.6rem]">
-                        비동기 AI Call을 호출할 때 실시간 로딩 상태를 표시하여
-                        반응성 높은 UX를 제공했습니다. Client-Side 에서 비동기
-                        로직을 다룰 때 외부 상태관리 라이브러리 도움 없이
-                        React의 Suspense API를 활용하여 직접 처리해보기도
-                        했습니다.{'\n'}
-                        원할한 협업을 위해 Git 컨벤션을 정의했고 Squash-Merge
-                        등을 활용하여 PR 관리를 하려 했으나 백엔드의 배포 상태에
-                        결함이 있어 후반부에는 제대로 지켜지지 못했습니다.
-                    </p>
                 </div>
 
                 <div className="mt-5 text-theme-1">
@@ -250,9 +228,9 @@ Page.Projects = function Projects() {
                 </div>
             </div>
 
-            <div className="mt-[4rem]">
+            <div className="mt-[4.5rem]">
                 <h3>개인 블로그 개발</h3>
-                <p className="sm:mt-1 text-xs sm:text-sm">
+                <p className="sm:mt-1 text-xs sm:text-base">
                     2024. 01. ~ 2024. 02.{'\n'}
                     개인 프로젝트 (유지보수 중)
                 </p>
@@ -268,43 +246,43 @@ Page.Projects = function Projects() {
                     <h4 className="mt-5 text-theme-1">What I did</h4>
                     <ul>
                         <li>
-                            <p>백엔드와 프론트의 개발부터 배포까지 경험</p>
-                        </li>
-                        <li>
                             <p>
-                                AWS의 EC2 관리 및 Nginx를 세팅. Github actions와
-                                Docker를 통한 CI/CD 환경 구축
+                                백엔드, DB, 프론트, 배포까지 모두 직접
+                                구축해보며 웹의 동작 방식을 이해해보려 노력함.
                             </p>
                         </li>
                         <li>
                             <p>
-                                Quill html 편집 모듈을 통해 실시간으로 글 업로드
-                                및 수정
+                                AWS EC2에 nginx 웹서버 세팅. github actions와
+                                Docker를 활용하여 CI/CD 환경 구축.
                             </p>
                         </li>
                         <li>
                             <p>
-                                AWS S3와 개인 DB를 활용하여 블로그 글에 첨부되는
-                                이미지 저장
+                                실시간 글 작성/수정 기능 구현. Quill npm 모듈
+                                활용.
                             </p>
                         </li>
                         <li>
                             <p>
-                                CSRF 공격을 막기 위해 DB에 저장하기 전
-                                백엔드에서 문자열을 정제
+                                CSRF 공격 예방하기 위해 DB에 저장하기 전
+                                문자열을 정제. HtmlSanitizer Nuget Package 활용.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                이미지 업로드 하기 전 이미지 포맷을 webp로 자동
+                                변환. webp-converter-brower npm 모듈 활용.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                다소 느린 배포 서버가 사용자 경험에 미치는
+                                영향을 최소화하기 위해 스켈레톤 UI 컴포넌트를
+                                제작. 비동기 상태관리는 react-query를 사용.
                             </p>
                         </li>
                     </ul>
-                </div>
-
-                <div>
-                    <h4 className="mt-5 text-theme-1">Project Review</h4>
-                    <p className="leading-[1.6rem]">
-                        다소 느린 배포 서버가 사용자 경험에 미치는 영향을
-                        최소화하기 위해 스켈레톤 UI 컴포넌트를 만들었습니다.
-                        비동기 상태관리는 react-query를 사용하여 간단하게
-                        처리했습니다.
-                    </p>
                 </div>
 
                 <div className="mt-5 text-theme-1">
@@ -352,9 +330,9 @@ Page.Projects = function Projects() {
                 </div>
             </div>
 
-            <div className="mt-[4rem]">
+            <div className="mt-[4.5rem]">
                 <h3>AO 스터디 공식 웹사이트</h3>
-                <p className="sm:mt-1 text-xs sm:text-sm">
+                <p className="sm:mt-1 text-xs sm:text-base">
                     2024. 01. ~ 2024. 02.{'\n'}
                     멘토 | 총 12명
                 </p>
@@ -373,41 +351,29 @@ Page.Projects = function Projects() {
                     <ul>
                         <li>
                             <p>
-                                멘토(팀장)으로 참여하여 프론트팀과 백엔드팀의
-                                질문 답변 및 코드 리뷰
-                            </p>
-                        </li>
-                        <li>
-                            <p>git 컨벤션 구성</p>
-                        </li>
-                        <li>
-                            <p>
-                                AWS의 EC2 관리 및 Nginx를 세팅. Github actions와
-                                Docker를 통한 CI/CD 환경 구축
+                                멘토, 팀장으로서 참여하여 git 컨벤션 구성 및
+                                프론트팀과 백엔드팀의 질문을 받음.
                             </p>
                         </li>
                         <li>
                             <p>
-                                두 팀이 개발한 프론트엔드 코드베이스 통합.
-                                Svelte 코드를 React 코드로 수정
+                                프로젝트 전반에 걸쳐 팀원들과 협업하며 문제를
+                                해결하고, 효율적인 개발 환경을 조성하는 데 기여.
                             </p>
                         </li>
                         <li>
-                            <p>다크 / 라이트 모드 구현</p>
+                            <p>
+                                AWS EC2에 nginx 웹서버 세팅. github actions와
+                                Docker를 활용하여 CI/CD 환경 구축.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                두개의 프론트엔드 팀이 개발한 코드베이스를 통합.
+                                Svelte 컴포넌트를 React로 변환.
+                            </p>
                         </li>
                     </ul>
-                </div>
-
-                <div>
-                    <h4 className="mt-5 text-theme-1">Project Review</h4>
-                    <p className="leading-[1.6rem]">
-                        프론트와 백엔드의 코드베이스 통합 작업을 주도했습니다.
-                        특히 Svelte로 작성된 코드베이스를 React로 변환하며,
-                        프론트엔드 팀의 개발을 가이드하고 코드 리뷰를
-                        진행했습니다. 프로젝트 전반에 걸쳐 팀원들과 협업하며
-                        문제를 해결하고, 효율적인 개발 환경을 조성하는 데
-                        기여했습니다.
-                    </p>
                 </div>
 
                 <div className="mt-5 text-theme-1">
@@ -449,7 +415,7 @@ Page.Projects = function Projects() {
                 </div>
             </div>
 
-            <div className="mt-[4rem]">
+            <div className="mt-[4.5rem]">
                 <h3>Etc</h3>
                 <p className="mt-1">
                     이외 진행했던 프로젝트들은 아래 링크에서 확인할 수 있습니다.
