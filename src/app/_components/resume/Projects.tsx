@@ -60,7 +60,7 @@ function Projects() {
                         </li>
                         <li>
                             <p>
-                                react-easy-crop 모듈을 활용해 이미지 업로드 전
+                                react-easy-crop 라이브러리를 활용해 이미지 업로드 전
                                 크롭, 확대, 회전 기능을 구현하여 이미지 편집의
                                 유연성과 사용자 경험을 향상.
                             </p>
@@ -178,7 +178,7 @@ function Projects() {
                         </li>
                         <li>
                             <p>
-                                webp-converter-browser 모듈을 활용해 이미지
+                                webp-converter-browser 라이브러리를 활용해 이미지
                                 업로드 시 WebP 포맷으로 자동 변환되도록
                                 구현하여, 이미지 용량을 줄이고 페이지 로딩 속도
                                 개선.
