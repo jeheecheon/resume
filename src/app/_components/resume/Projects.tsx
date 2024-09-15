@@ -93,7 +93,6 @@ function Projects() {
                         <Tag>tailwindcss</Tag>
                         <Tag>ReduxTK</Tag>
                         <Tag>AWS</Tag>
-                        <Tag>Docker</Tag>
                         <Tag>github actions</Tag>
                     </aside>
                 </div>
@@ -189,17 +188,17 @@ function Projects() {
                 <div>
                     <h4 className="mt-5 text-theme-1">Skillset I Used</h4>
                     <div className="flex flex-wrap mt-1 gap-2">
-                        <Tag>ASP.NET</Tag>
-                        <Tag>psgl</Tag>
-                        <Tag>OAuth2.0</Tag>
+                        <Tag>three.js</Tag>
+                        <Tag>react-three-fiber</Tag>
                         <Tag>react.js</Tag>
                         <Tag>typescript</Tag>
                         <Tag>tailwindcss</Tag>
-                        <Tag>ReduxTK</Tag>
                         <Tag>react-query</Tag>
+                        <Tag>ReduxTK</Tag>
+                        <Tag>ASP.NET</Tag>
+                        <Tag>C#</Tag>
+                        <Tag>psgl</Tag>
                         <Tag>AWS</Tag>
-                        <Tag>S3</Tag>
-                        <Tag>Docker</Tag>
                         <Tag>github actions</Tag>
                     </div>
                 </div>
@@ -211,7 +210,7 @@ function Projects() {
                 <p className="mt-1">
                     이외 진행한 프로젝트들은 아래 링크에서 확인하실 수 있습니다.
                 </p>
-                <p className="mt-2 text-xs sm:text-sm">
+                <p className="mt-2">
                     <span className="font-medium text-theme-1">
                         Projects.{` `}
                     </span>
