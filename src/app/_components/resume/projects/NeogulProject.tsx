@@ -5,7 +5,10 @@ export default function NeogulProject() {
         <Project>
             <Project.Title>너굴게임</Project.Title>
 
-            <Project.Subtitle>2024. 08. ~ 진행 중{'\n'}</Project.Subtitle>
+            <Project.Subtitle>
+                2024. 08. ~ 진행 중{'\n'}
+                협업 인원: 2명
+            </Project.Subtitle>
 
             <Project.Description
                 linkInfos={[

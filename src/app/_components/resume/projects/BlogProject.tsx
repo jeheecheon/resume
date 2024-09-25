@@ -5,7 +5,9 @@ export default function BlogProject() {
         <Project>
             <Project.Title>개인 블로그 개발</Project.Title>
 
-            <Project.Subtitle>2023. 12. ~ 서비스 중{'\n'}</Project.Subtitle>
+            <Project.Subtitle>
+                2023. 12. ~ 서비스 중{'\n'}단독 프로젝트
+            </Project.Subtitle>
 
             <Project.Description
                 linkInfos={[

@@ -7,8 +7,8 @@ export default function MuckgymmaProject() {
 
             <Project.Subtitle>
                 2024. 03. ~ 2024. 05. (3개월){'\n'}
-                팀장 | 총 4명{'\n'}
-                캡스톤 디자인 경진대회 동상
+                캡스톤 디자인 경진대회 동상{'\n'}
+                협업 인원: 4명
             </Project.Subtitle>
 
             <Project.Description
@@ -45,12 +45,12 @@ export default function MuckgymmaProject() {
 
             <Project.List title="Reflections">
                 <Project.List.Item>
-                    컴포넌트 디자인 패턴의 부재로 가독성 및 전반적인 코드 품질
-                    미흡.
+                    팀 구성원의 경험 부족으로 디자인 패턴을 적용하지 못해
+                    유지보수성이 다소 미흡했습니다.
                 </Project.List.Item>
                 <Project.List.Item>
-                    SEO 최적화를 위한 meta 태그 관리에 소홀하여 Next.js의 SSR
-                    이점을 적극 활용하지 못함.
+                    SEO 최적화를 위한 meta 태그 관리가 미흡하여 Next.js의 SSR
+                    이점을 충분히 활용하지 못했습니다.
                 </Project.List.Item>
             </Project.List>
 
