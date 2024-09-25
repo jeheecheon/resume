@@ -23,38 +23,42 @@ export default function MuckgymmaProject() {
                     },
                 ]}
             >
-                먹짐마 (웹앱).{'\n'}
-                인공지능을 통해 식단 관리와 운동 계획을 관리 받는 웹앱.
+                사진 속 식단을 인공지능이 분석 후 운동계획과 인스타 형식의
+                커뮤니티 공간 제공.
             </Project.Description>
 
-            <Project.Experience>
-                <Project.Experience.Item>
+            <Project.List title="What I did">
+                <Project.List.Item>
                     AWS EC2에 Nginx를 구성하고, GitHub Actions와 Docker로 CI/CD
                     환경을 구축.
-                </Project.Experience.Item>
-                <Project.Experience.Item>
-                    Suspense API를 활용하여 외부 라이브러리 없이 비동기 상태
-                    처리. 상태 관리의 복잡성을 줄이고, 로딩 상태를 보다
-                    직관적으로 관리하여 UX 향상.
-                </Project.Experience.Item>
-                <Project.Experience.Item>
+                </Project.List.Item>
+                <Project.List.Item>
                     react-easy-crop 라이브러리를 통합하여 이미지 업로드 전 크롭,
                     확대, 회전 기능을 구현하여 이미지 편집의 유연성과 사용자
                     경험을 향상.
-                </Project.Experience.Item>
-                <Project.Experience.Item>
-                    비동기 로딩 상태를 UI에 표시하여 대기 상태를 직관적으로
-                    인식할 수 있도록 구현.
-                </Project.Experience.Item>
-            </Project.Experience>
+                </Project.List.Item>
+                <Project.List.Item>
+                    타이핑 애니메이션, 페이지 전환 애니메이션 등 적재적소
+                    적용하여 모바일에서 UI의 반응성 향상.
+                </Project.List.Item>
+            </Project.List>
+
+            <Project.List title="Reflections">
+                <Project.List.Item>
+                    컴포넌트 디자인 패턴의 부재로 가독성 및 전반적인 코드 품질
+                    미흡.
+                </Project.List.Item>
+                <Project.List.Item>
+                    SEO 최적화를 위한 meta 태그 관리에 소홀하여 Next.js의 SSR
+                    이점을 적극 활용하지 못함.
+                </Project.List.Item>
+            </Project.List>
 
             <Project.Skillset>
                 <Project.Skillset.Tag>next.js</Project.Skillset.Tag>
                 <Project.Skillset.Tag>typescript</Project.Skillset.Tag>
                 <Project.Skillset.Tag>tailwindcss</Project.Skillset.Tag>
                 <Project.Skillset.Tag>ReduxTK</Project.Skillset.Tag>
-                <Project.Skillset.Tag>AWS</Project.Skillset.Tag>
-                <Project.Skillset.Tag>github actions</Project.Skillset.Tag>
             </Project.Skillset>
         </Project>
     );
