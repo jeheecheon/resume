@@ -14,7 +14,7 @@ export default function BlogProject() {
                         href: 'https://blog.jeheecheon.com',
                     },
                     {
-                        label: '깃허브 리포',
+                        label: 'Github',
                         href: 'https://github.com/jeheecheon/blog',
                     },
                 ]}
@@ -56,14 +56,14 @@ export default function BlogProject() {
 
             <Project.Skillset>
                 <Project.Skillset.Tag>react-three-fiber</Project.Skillset.Tag>
-                <Project.Skillset.Tag>react.js</Project.Skillset.Tag>
-                <Project.Skillset.Tag>typescript</Project.Skillset.Tag>
-                <Project.Skillset.Tag>tailwindcss</Project.Skillset.Tag>
-                <Project.Skillset.Tag>react-query</Project.Skillset.Tag>
+                <Project.Skillset.Tag>React.js</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Typescript</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Tailwindcss</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Tanstack Query</Project.Skillset.Tag>
                 <Project.Skillset.Tag>ReduxTK</Project.Skillset.Tag>
                 <Project.Skillset.Tag>ASP.NET Core</Project.Skillset.Tag>
                 <Project.Skillset.Tag>C#</Project.Skillset.Tag>
-                <Project.Skillset.Tag>psgl</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Psgl</Project.Skillset.Tag>
             </Project.Skillset>
         </Project>
     );

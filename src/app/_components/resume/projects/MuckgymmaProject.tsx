@@ -19,7 +19,7 @@ export default function MuckgymmaProject() {
                     },
                     {
                         href: 'https://github.com/MJUZzang/muckGYMma',
-                        label: '깃허브 리포',
+                        label: 'Github',
                     },
                 ]}
             >
@@ -55,9 +55,9 @@ export default function MuckgymmaProject() {
             </Project.List>
 
             <Project.Skillset>
-                <Project.Skillset.Tag>next.js</Project.Skillset.Tag>
-                <Project.Skillset.Tag>typescript</Project.Skillset.Tag>
-                <Project.Skillset.Tag>tailwindcss</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Next.js</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Typescript</Project.Skillset.Tag>
+                <Project.Skillset.Tag>Tailwindcss</Project.Skillset.Tag>
                 <Project.Skillset.Tag>ReduxTK</Project.Skillset.Tag>
             </Project.Skillset>
         </Project>

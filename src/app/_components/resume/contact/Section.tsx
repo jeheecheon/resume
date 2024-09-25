@@ -17,13 +17,14 @@ Section.Title = function Title({
 interface SectionItemProps extends HTMLAttributes<HTMLDivElement> {
     label: string;
     href: string;
+    value: string;
 }
-Section.Item = function Item({ label, href }: SectionItemProps) {
+Section.Item = function Item({ label, href, value }: SectionItemProps) {
     return (
         <span className="text-nowrap">
             <p className="inline">{`${label}. `}</p>
-            <a title="Phone Number" href={`tel:${href}`}>
-                {href}
+            <a title="Phone Number" href={href}>
+                {value}
             </a>
         </span>
     );

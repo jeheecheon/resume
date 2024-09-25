@@ -24,7 +24,7 @@
 
     .dark {
         --bg-color: #060606;
-        --inverse-color-1: #f5f6f7;
+        --inverse-color-1: #fbfbfb;
         --inverse-color-2: #dfe2e9;
         --inverse-color-3: #c1c3c9;
     }
@@ -73,8 +73,13 @@
 
     a {
         @apply font-light;
-        @apply text-inverse-3;
         @apply underline;
+
+        @apply text-sky-500;
+    }
+
+    .dark a {
+        @apply text-cyan-500;
     }
 
     ul {

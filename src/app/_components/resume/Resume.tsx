@@ -32,6 +32,7 @@ function Resume() {
             </Contact>
 
             <Projects>
+                <Projects.Neogul />
                 <Projects.Muckgymma />
                 <Projects.Blog />
                 <Projects.Etc />
