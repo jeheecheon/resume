@@ -1,4 +1,4 @@
-import Resume from '@/_components/resume/Resume';
+import Resume from '@/_components/resume';
 
 function Page() {
     return <Resume />;
