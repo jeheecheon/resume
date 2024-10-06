@@ -38,8 +38,8 @@ export default function MuckgymmaProject() {
                     경험을 향상.
                 </Project.List.Item>
                 <Project.List.Item>
-                    타이핑 애니메이션, 페이지 전환 애니메이션 등 적재적소
-                    적용하여 모바일에서 UI의 반응성 향상.
+                    타이핑 애니메이션, 페이지 전환 애니메이션 등 적용하여
+                    모바일에서 UI의 반응성 향상.
                 </Project.List.Item>
             </Project.List>
 

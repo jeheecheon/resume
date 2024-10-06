@@ -1,3 +1,4 @@
+import InlineAnchor from '@/_components/InlineAnchor';
 import Project from '@/_components/resume/projects/project/Project';
 
 export default function BlogProject() {
@@ -27,7 +28,7 @@ export default function BlogProject() {
             <Project.List title="What I did">
                 <Project.List.Item>풀스택 개발과정 경험</Project.List.Item>
                 <Project.List.Item>
-                    react-three fiber를 활용하여 3D 랜딩 페이지 구현
+                    react-three fiber를 활용하여 3D 메인 페이지 구현
                 </Project.List.Item>
                 <Project.List.Item>
                     AWS EC2에 Nginx를 구성하고, GitHub Actions와 Docker로 CI/CD
@@ -52,8 +53,11 @@ export default function BlogProject() {
 
             <Project.List title="Reflections">
                 컴포넌트 디자인 패턴이 부재한 상태에서 유지보수를 지속하며 그
-                중요성을 체감했으며, 다양한 디자인 패턴을 학습하고 적용해보는
-                계기가 되었습니다.
+                중요성을 체감했으며,
+                <InlineAnchor href="https://blog.jeheecheon.com/posts/d5b827f2-f4fd-425e-9504-6d321a94b5e0/%EC%9E%AC%EC%82%AC%EC%9A%A9%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EB%8A%94-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EA%B3%BC-%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0">
+                    다양한 디자인 패턴을 학습하고
+                </InlineAnchor>
+                적용해보는 계기가 되었습니다.
             </Project.List>
 
             <Project.Skillset>

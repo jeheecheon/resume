@@ -74,12 +74,20 @@
     a {
         @apply font-light;
         @apply underline;
+        @apply underline-offset-1;
+        @apply decoration-inverse-3;
+        @apply dark:decoration-gray-500;
+        @apply hover:decoration-[var(--theme-color)];
+        @apply dark:hover:decoration-orange-300;
 
-        @apply text-sky-500;
-    }
+        @apply text-inverse-1;
+        @apply dark:text-gray-400;
 
-    .dark a {
-        @apply text-cyan-500;
+        @apply transition-colors;
+        @apply duration-500;
+
+        @apply hover:text-[var(--theme-color)];
+        @apply hover:dark:text-orange-300;
     }
 
     ul {
@@ -97,5 +105,17 @@
         @apply text-inverse-1;
         @apply text-pretty;
         /* @apply font-[300] */
+    }
+}
+
+@layer utilities {
+    .inline-anchor {
+        @apply hover:duration-1000;
+        @apply text-[var(--theme-color)];
+        @apply font-semibold;
+        @apply dark:font-medium;
+        @apply underline;
+        @apply underline-offset-2;
+        @apply decoration-[var(--theme-color)];
     }
 }
