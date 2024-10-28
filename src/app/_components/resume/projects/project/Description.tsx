@@ -7,8 +7,7 @@ interface DescriptionProps extends HTMLAttributes<HTMLDivElement> {
 export default function Description({ children, linkInfos }: DescriptionProps) {
     return (
         <div>
-            <p className='mt-5 text-gray-500 dark:text-gray-200 transition-colors duration-1000
-            has-[a:hover]:text-[var(--theme-color)] has-[a:hover]:dark:text-orange-300'>
+            <p className="mt-5 text-gray-500 dark:text-gray-100">
                 {'🌐( '}
                 {linkInfos.map(({ label, href }, idx) => {
                     return (
@@ -16,7 +15,7 @@ export default function Description({ children, linkInfos }: DescriptionProps) {
                             {idx !== 0 && ' | '}
                             <a
                                 key={label}
-                                className="no-underline text-gray-500 dark:text-gray-200 peer"
+                                className="text-gray-500 dark:text-gray-100 no-underline transition-colors duration-1000"
                                 title={label}
                                 href={href}
                                 target="_blank"
