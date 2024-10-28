@@ -74,14 +74,16 @@
     a {
         @apply font-light;
         @apply underline;
-        @apply underline-offset-1;
-        @apply decoration-inverse-3;
+        @apply underline-offset-2;
+        @apply decoration-[0.04rem];
+        @apply decoration-gray-400;
         @apply dark:decoration-gray-500;
         @apply hover:decoration-[var(--theme-color)];
         @apply dark:hover:decoration-orange-300;
 
         @apply text-inverse-1;
-        @apply dark:text-gray-400;
+        @apply text-gray-600/85;
+        @apply dark:text-gray-200/90;
 
         @apply transition-colors;
         @apply duration-500;

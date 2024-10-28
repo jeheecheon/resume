@@ -7,7 +7,6 @@ interface InlineAnchorProps extends HTMLAttributes<HTMLAnchorElement> {
 export default function InlineAnchor({ children, href }: InlineAnchorProps) {
     return (
         <>
-            {' '}
             <a
                 className="inline-anchor"
                 target="_blank"
@@ -15,7 +14,7 @@ export default function InlineAnchor({ children, href }: InlineAnchorProps) {
                 href={href}
             >
                 {children}
-            </a>{' '}
+            </a>
         </>
     );
 }

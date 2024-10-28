@@ -29,6 +29,10 @@ export default function MuckgymmaProject() {
 
             <Project.List title="What I did">
                 <Project.List.Item>
+                    팀장으로 프로젝트 일정 관리 및 팀원 역할 분배, 코드 리뷰 등
+                    팀 내 커뮤니케이션을 총괄.
+                </Project.List.Item>
+                <Project.List.Item>
                     AWS EC2에 Nginx를 구성하고, GitHub Actions와 Docker로 CI/CD
                     환경을 구축.
                 </Project.List.Item>
@@ -37,6 +41,7 @@ export default function MuckgymmaProject() {
                     확대, 회전 기능을 구현하여 이미지 편집의 유연성과 사용자
                     경험을 향상.
                 </Project.List.Item>
+
                 <Project.List.Item>
                     타이핑 애니메이션, 페이지 전환 애니메이션 등 적용하여
                     모바일에서 UI의 반응성 향상.

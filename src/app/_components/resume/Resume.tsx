@@ -7,6 +7,7 @@ import Contact from '@/_components/resume/contact/Contact';
 import Projects from '@/_components/resume/projects';
 import AwardsAndScores from '@/_components/resume/awards-and-scores';
 import Education from '@/_components/resume/education';
+import CoverLetter from '@/_components/resume/cover-letter';
 
 function Resume() {
     const ref = useRef<HTMLDivElement>(null);
@@ -22,8 +23,8 @@ function Resume() {
 
             <Introduction>
                 {`"코드의 깊이"`}를 중시하는 프론트엔드 개발자입니다. 단순한
-                기능구현을 넘어서 동작 원리를 이해하고, 간결한 코드를 작성하는
-                것을 지향합니다.
+                기능구현을 넘어서, 동작원리를 파헤치고 이해하는 것을 사랑하는
+                사람입니다.
             </Introduction>
 
             <Contact>
@@ -31,10 +32,15 @@ function Resume() {
                 <Contact.Channel />
             </Contact>
 
+            <CoverLetter />
+
             <Projects>
                 <Projects.Neogul />
+                <Projects.Separator />
                 <Projects.Muckgymma />
+                <Projects.Separator />
                 <Projects.Blog />
+                <Projects.Separator />
                 <Projects.Etc />
             </Projects>
 
