@@ -32,6 +32,8 @@ function Resume() {
                 <Contact.Channel />
             </Contact>
 
+            <CoverLetter />
+
             <Projects>
                 <Projects.Neogul />
                 <Projects.Separator />
@@ -41,8 +43,6 @@ function Resume() {
                 <Projects.Separator />
                 <Projects.Etc />
             </Projects>
-
-            <CoverLetter />
 
             <AwardsAndScores>
                 <AwardsAndScores.CapstoneDesign />
