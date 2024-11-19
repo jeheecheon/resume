@@ -39,7 +39,7 @@ export default function BlogProject() {
                     구현하여 직관적인 텍스트 편집툴 적용.
                 </Project.List.Item>
                 <Project.List.Item>
-                    문자열 정제를 수행하여 CSRF 공격 방지.
+                    문자열 정제를 수행하여 XSS 공격 방지.
                 </Project.List.Item>
                 <Project.List.Item>
                     이미지 업로드 시 WebP 포맷으로 자동 변환되도록 구현하여
